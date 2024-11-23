@@ -35,3 +35,5 @@ respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
    st.write(respuesta)
 st.balloons()
+st.button('Hit me')
+st.snow()
