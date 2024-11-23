@@ -3,7 +3,7 @@ from openai import OpenAI
 
 
 # Show title and description.
-st.title("💬 Chatbot")
+st.title("💬 My Chatbot")
 st.write(
    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
@@ -34,3 +34,4 @@ stream = client.chat.completions.create(
 respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
    st.write(respuesta)
+st.balloms()
